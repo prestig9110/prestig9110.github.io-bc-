@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/logo.png" type="image/png" />
+  <title>GMGame</title>
+
+  <!-- ---------- link style --------- -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/fotorama.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- ---------- header --------- -->
+  <div class="header">
+    <!--
+    <div>
+      <div style="font-size: 20px;font-weight: 900">
+        <a href="#the-default-view">the-default-view</a>
+        <a href="#start">start</a>
+        <a href="#support">support</a>
+        <a href="#mods">mods</a>
+        <a href="#plugins">plugins</a>
+        <a href="#maps">maps</a>
+        <a href="#command">command</a>
+        <a href="#gallery-new-year">gallery-new-year</a>
+        <a href="#gallery-hyper-loop">gallery-hyper-loop</a>
+        <a href="#gallery-pink-squad">gallery-pink-squad</a>
+        <a href="#resources">resources</a>
+        <a href="#litematica">litematica</a>
+        <a href="#market">market</a>
+        </div>-->
+    
+    </div>
+    <div class="menu">
+      <div id="toggle" onclick="toggle()">
+        <span class="material-icons"> list </span>
+      </div>
+      <div class="content-menu">
+        <ul class="links" id="links">
+          <li>
+            <a class="desktop-link" href="#">Главное</a>
+            <input type="checkbox" id="show-features" />
+            <label for="show-features">Главное</label>
+            <ul>
+              <li><a href="#the-default-view">Главная страница</a></li>
+              <li><a href="#start">Как начать</a></li>
+              <li><a href="#support">Помощь проекту</a></li>
+              <li><a href="#maps">Карта</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link" href="#">Полезное</a>
+            <input type="checkbox" id="show-features" />
+            <label for="show-features">Полезное</label>
+            <ul>
+              <li><a href="#mods">Моды</a></li>
+              <li><a href="#plugins">Плагины</a></li>
+              <li><a href="#litematica">Лайтматики</a></li>
+              <li><a href="#command">Команды</a></li>
+              <li><a href="#resources">Ресурсы</a></li>
+              <li><a href="#market">Магазин</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link" href="#">Галереи</a>
+            <input type="checkbox" id="show-features" />
+            <label for="show-features">Галереи</label>
+            <ul>
+              <li><a href="#gallery-new-year">Новый год 2021</a></li>
+              <li><a href="#gallery-hyper-loop">Туннели</a></li>
+              <li><a href="#gallery-pink-squad">Бада Pink Squad</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <main role="main" class="app">
+        <!-- ---------- the-default-view --------- -->
+        <section id="the-default-view">
+          <h1>GMGame</h1>
+          <p>GMGame — развивающийся строительный minecraft-сервер с элементами лёгкого ролеплея</p>
+          <p>Сервер функционирует на ядре Yatopia версии 1.16.5 с плагинами, повышающими комфортность игры и, вместе с
+            тем,
+            позволяющими не потерять полуванильный облик игрового процесса</p>
+          <p>Доступ на сервер осуществляется бесплатно, есть возможность играть с лицензионных/нелицензионных учётных
+            записей
+            Java Edition, имеется поддержка версии Bedrock Edition</p>
+          <p>Игровой мир делится на Основной и Ресурсный миры со всеми тремя измерениями и переходами между ними, в
+            будущем
+            планируется добавление мира для редстоун-систем и креатив-мира. Перемещение по основному миру происходит
+            посредством системы хайперлупов, вход в ресурсные миры осуществляется через портал на Спавне</p>
+          <p>На нашем сервере по мере возможности поддерживается дружеская атмосфера, токсики и неадекваты оперативно
+            локализуются и не задерживаются надолго. В чатах и войсах рекомендовано придерживаться общепринятых норм
+            поведения
+            и общения. На игровом сервере запрещено гриферство, воровство и читерство</p>
+        </section>
+
+        <!-- ---------- start --------- -->
+        <section id="start">
+          <h2>Как начать</h2>
+          <h4>Для получения доступа на игровой сервер нужно:</h4>
+          <ul>
+            <li>- Иметь аккаунт в Discord</li>
+            <li>- Оформить заявку в канале <span>#заявки-на-сервер</span>, рассмотрение заявки осуществляется в течение
+              суток
+            </li>
+            <li>- Переименовать ДС-аккаунт в соответствии с игровым ником. После одобрения заявки и успешного входа на
+              сервер
+              ник в ДС можно вернуть в изначальное состояние</li>
+            <li>- Дождаться уведомления о добавлении на сервер от бот-аккаунта <span>Седьмая-из-девяти#3200</span></li>
+          </ul>
+          <p>В случае затруднений со входом на сервер можно обратиться к игрокам @Dalandis (<span>Andrey#2445</span>)
+            или
+            @prestig9110 (<span>prestig9110#1026</span>)</p>
+          <p>Записаться на экскурсию по серверу можно у @Blackirita (<span>Блэки#0395</span>) или @Niksa
+            (<span>Niksa#6447</span>)</p>
+          <h4>Ссылки:</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/gmgameserver/">- Наш Инстаграм</a></li>
+            <li><a href="#support">- Поддержать проект</a></li>
+            <li><a href="https://discord.gg/sPR62FDQQz">- Приглашение на наш Дискорд сервер</a>
+        </section>
+
+        <!-- ---------- support --------- -->
+        <section id="support">
+          <h2>Поддержать проект</h2>
+          <h4>Сервер GMgame является бесплатным и существует за Ваши донаты.</h4>
+          <h4>Для поддержки и развития проекта, Вы можете пожертвовать или сделать донат на конкретное оборудование:
+          </h4>
+          <ul>
+            <li><a href="https://donate.guru/v/gtn27">- Диск</a></li>
+            <li><a href="https://donate.guru/v/73v6l">- Кулер процессора</a></li>
+            <li><a href="https://donate.guru/v/6wc8s">- Источник бесперебойного питания (ИБП)</a></li>
+            <li><a href="https://donate.guru/v/wrh5s">- Оперативная память</a></li>
+            <li><a href="https://donate.guru/v/x9dqf">- Процессор</a></li>
+            <li><a href="https://donate.guru/v/seucm">- Роутер</a></li>
+          </ul>
+          <h4>Спасибо! Ваша поддержка очень важна.</h4>
+        </section>
+
+        <!-- ---------- mods --------- -->
+        <section id="mods">
+          <h2>Сборки модов для игры</h2>
+          <h4>Здесь собраны два оптимальных варианта сборок, которыми может пользоваться игрок нашего сервера.</h4>
+          <h5>Самое первое, что нужно установить, чтобы моды заработали - это Fabric и Fabric API.</h5>
+          <ul>
+            <li><a href="https://fabricmc.net/use/">Fabric</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">Fabric API</a></li>
+          </ul>
+          <h4>Теперь мы выбираем одну из сборок:</h4>
+          <h5>Первая сборка - это сборка на OptiFine и OptiFabric. Данная сборка менее оптимизированная, но здесь можно
+            включить шейдеры и делать прекрасные скриншоты</h5>
+          <ul>
+            <li><a href="https://optifine.net/downloads">OptiFine</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/optifabric/files">OptiFabric</a></li>
+          </ul>
+          <h5>Вторая сборка на Sodium, Sodium Extra, Better Sodium Video Settings Button, Phosphor, Lithium и
+            LambDynamicLights. Данная сборка более оптимизированная чем первая, но здесь нет возможности включения
+            шейдеров
+          </h5>
+          <ul>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/sodium/files">Sodium</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/sodium-extra/files">Sodium Extra</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/better-sodium-video-settings-button/files">Better
+                Sodium
+                Video Settings Button</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/phosphor/files">Phosphor</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/lithium/files">Lithium</a> </li>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights/files">LambDynamicLights</a>
+            </li>
+          </ul>
+          <h4><span>Нужно быть внимательным и не путать файлы сборок!</span></h4>
+          <h4>Дополнительные моды:</h4>
+          <h5>Здесь будет перечислен список модов, которые подойдут для обеих сборок, выбирайте только то, что вам
+            подходит
+            (описание модов можно посмотреть по ссылке):</h5>
+        </section>
+
+        <!-- ---------- plugins --------- -->
+        <section id="plugins">
+          <h2>Плагины</h2>
+          <h4>Плагины - дополнения к серверу, которые предоставляют удобства игрокам.</h4>
+          <ul>
+            <li><span>AdvancedAchievements</span> - Дополнительные ачивки</li>
+            <li><span>AdvancedBan</span> - Плагин для банов</li>
+            <li><span>BungeeTabListPlus</span> - Таблист с поддержкой банжи</li>
+            <li><span>BungeeTeleportManager</span> - Плагин для телепортации с поддержкой банки</li>
+            <li><span>ChatControlRed</span> - Улучшенный чат и другие возможности для книг</li>
+            <li><span>Chunkmaster</span> - Предгенерация чанков</li>
+            <li><span>CMI</span> - Мульти инструмент, порталы, ванишь, голограммы и многое другое</li>
+            <li><span>FastAsyncWorldEdit (WorldEdit)</span> - Асинхронный WorldEdit </li>
+            <li><span>HeadDatabase</span> - База голов</li>
+            <li><span>JPremium*</span> - Плагин авторизации</li>
+            <li><span>LogBlock</span> - Логирование которое отслеживает изменения блоков</li>
+            <li><span>LuckPerms</span> - Плагин разрешений</li>
+            <li><span>MysqlPlayerDataBridge</span> - Синхронизация инвентарей игроков между серверами</li>
+            <li><span>NoMobGriefing</span> - Управление грифом отдельных мобов</li>
+            <li><span>SkinsRestorer</span> - Скины для не лицензионных игроков</li>
+            <li><span>VillagerMarket</span> - Магазины в игре</li>
+          </ul>
+        </section>
+
+        <!-- ---------- maps --------- -->
+        <section id="maps">
+          <h2>Карта сервера</h2>
+          <h3>На сервере присутствуют две карты</h3>
+          <h4>Первая карта Overviewer обновляется каждые два часа начиная с 00:00 по МСК</h4>
+          <h4>Tо что присутствует на карте</h4>
+          <ul>
+            <li>- Верхний мир в дневное время</li>
+            <li>- Верхний мир в ночное время</li>
+            <li>- Нижний мир до 50 уровня и с переключением выше 50 уровня</li>
+            <li>- Мир края</li>
+          </ul>
+          <h4>Вторая карта Blue Map обновляется каждые два часа начиная с 00:00 по МСК</h4>
+          <h4>Tо что присутствует на карте</h4>
+          <ul>
+            <li>- Верхний мир в дневное время</li>
+            <li>- Верхний мир в ночное время</li>
+            <li>- Нижний мир до 50 уровня</li>
+            <li>- Мир края</li>
+          </ul>
+
+
+
+          <main class="cd-main-content">
+            <section class="center">
+              <a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger"> Открыть карту</a>
+            </section>
+          </main> 
+        
+          <div class="cd-modal" data-modal="modal-trigger">
+            <div class="cd-svg-bg" 
+            data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+            data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+            data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+            data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+            data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+            data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+              <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+                <title>SVG Modal background</title>
+                <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+                <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+                <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+              </svg>
+            </div>        
+            <div class="cd-modal-content">
+              <iframe src="http://map.gmgame.ru/#/0/64/0/-4/gmgame%20-%20overworld/over" width="100%" height="100%"></iframe>
+            </div>         
+            <a href="#0" class="modal-close">Close</a>
+          </div> 
+          <div class="cd-cover-layer"></div>
+
+          
+
+        </section>
+
+        <!-- ---------- command --------- -->
+        <section id="command">
+          <h2>Команды</h2>
+          <h4></h4>
+          <ul>
+            <li><span>/msg</span> - сообщение для другого игрока</li>
+            <li><span>/w</span> - сообщение для другого игрока</li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+            <li><span>/</span> - </li>
+          </ul>
+        </section>
+
+        <!-- ---------- gallery-new-year--------- -->
+        <section id="gallery-new-year">
+          <h2>Новогодняя галерея</h2>
+          <h4>Небольшой фото отчёт празднования нового года на сервере</h4>
+          <div class="galerry-box">
+            <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs" data-loop="true" data-shuffle="true"
+              data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true">
+              <a href="./img/Galerry/Gallery New-Year/New-Year-1.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-1.webp" id="01" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-2.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-2.webp" id="02" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year 3.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year 3.webp" id="03" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-4.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-4.webp" id="04" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-5.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-5.webp" id="05" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-6.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-6.webp" id="06" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-6.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-6.webp" id="06" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-7.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-7.webp" id="07" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-8.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-8.webp" id="08" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-9.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-9.webp" id="09" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-10.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-10.webp" id="10" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-11.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-11.webp" id="11" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-12.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-12.webp" id="12" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-13.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-13.webp" id="13" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-14.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-14.webp" id="14" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-15.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-15.webp" id="15" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-16.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-16.webp" id="16" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-17.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-17.webp" id="17" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-18.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-18.webp" id="18" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-19.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-19.webp" id="19" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-20.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-20.webp" id="20" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-21.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-21.webp" id="21" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-22.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-22.webp" id="22" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-23.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-23.webp" id="23" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-24.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-24.webp" id="24" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-25.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-25.webp" id="25" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-26.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-26.webp" id="26" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-27.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-27.webp" id="27" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-28.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-28.webp" id="28" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-29.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-29.webp" id="29" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-30.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-30.webp" id="30" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-31.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-31.webp" id="31" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-32.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-32.webp" id="32" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-33.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-33.webp" id="33" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-34.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-34.webp" id="34" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-35.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-35.webp" id="35" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-36.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-36.webp" id="36" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-37.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-37.webp" id="37" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-38.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-38.webp" id="38" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-39.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-39.webp" id="39" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-40.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-40.webp" id="40" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-41.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-41.webp" id="41" /></a>
+              <a href="./img/Galerry/Gallery New-Year/New-Year-42.webp"><img
+                  src="./img/Galerry/Gallery New-Year/New-Year-42.webp" id="42" /></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---------- gallery-hyper-loop --------- -->
+        <section id="gallery-hyper-loop">
+          <h2>Error</h2>
+        </section>
+
+        <!-- ---------- gallery-pink-squad --------- -->
+        <section id="gallery-pink-squad">
+          <h2>Error</h2>
+        </section>
+
+        <!-- ---------- resources --------- -->
+        <section id="resources">
+          <h2>Ресурс пак на тотемы и елитры</h2>
+          <div class="content">
+            <div class="elytra">
+              <div class="accordion">
+                <div class="tab">
+                  <span class="title">angel</span>
+                  <input type="checkbox" id="angel">
+                  <label for="angel">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/angel.webp" alt="angel">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">archangel</span>
+                  <input type="checkbox" id="archangel">
+                  <label for="archangel">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/archangel.webp" alt="archangel">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">avatar</span>
+                  <input type="checkbox" id="avatar">
+                  <label for="avatar">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/avatar.webp" alt="avatar">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">bee</span>
+                  <input type="checkbox" id="bee">
+                  <label for="bee">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/bee.webp" alt="bee">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">cosmos</span>
+                  <input type="checkbox" id="cosmos">
+                  <label for="cosmos">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/cosmos.webp" alt="cosmos">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">crimson</span>
+                  <input type="checkbox" id="crimson">
+                  <label for="crimson">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/crimson.webp" alt="crimson">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">davinci</span>
+                  <input type="checkbox" id="davinci">
+                  <label for="davinci">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/davinci.webp" alt="davinci">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">demon</span>
+                  <input type="checkbox" id="demon">
+                  <label for="demon">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/demon.webp" alt="demon">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">dragon</span>
+                  <input type="checkbox" id="dragon">
+                  <label for="dragon">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/dragon.webp" alt="dragon">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">dragonfly</span>
+                  <input type="checkbox" id="dragonfly">
+                  <label for="dragonfly">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/dragonfly.webp" alt="dragonfly">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">dreamtime</span>
+                  <input type="checkbox" id="dreamtime">
+                  <label for="dreamtime">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/dreamtime.webp" alt="dreamtime">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">eagle</span>
+                  <input type="checkbox" id="eagle">
+                  <label for="eagle">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/eagle.webp" alt="eagle">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">elysium</span>
+                  <input type="checkbox" id="elysium">
+                  <label for="elysium">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/elysium.webp" alt="elysium">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">fairy</span>
+                  <input type="checkbox" id="fairy">
+                  <label for="fairy">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/fairy.webp" alt="fairy">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">fried_wings</span>
+                  <input type="checkbox" id="fried_wings">
+                  <label for="fried_wings">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/fried_wings.webp" alt="fried_wings">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">golden_beetle</span>
+                  <input type="checkbox" id="golden_beetle">
+                  <label for="golden_beetle">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/golden_beetle.webp" alt="golden_beetle">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">green_beetle</span>
+                  <input type="checkbox" id="green_beetle">
+                  <label for="green_beetle">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/green_beetle.webp" alt="green_beetle">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">green_dragon</span>
+                  <input type="checkbox" id="green_dragon">
+                  <label for="green_dragon">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/green_dragon.webp" alt="green_dragon">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">inferno</span>
+                  <input type="checkbox" id="inferno">
+                  <label for="inferno">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/inferno.webp" alt="inferno">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">macaw</span>
+                  <input type="checkbox" id="macaw">
+                  <label for="macaw">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/macaw.webp" alt="macaw">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">mercy</span>
+                  <input type="checkbox" id="mercy">
+                  <label for="mercy">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/mercy.webp" alt="mercy">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">mercyinferno</span>
+                  <input type="checkbox" id="mercyinferno">
+                  <label for="mercyinferno">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/mercyinferno.webp" alt="mercyinferno">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">mercysapphire</span>
+                  <input type="checkbox" id="mercysapphire">
+                  <label for="mercysapphire">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/mercysapphire.webp" alt="mercysapphire">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">neonblue</span>
+                  <input type="checkbox" id="neonblue">
+                  <label for="neonblue">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/neonblue.webp" alt="neonblue">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">nova</span>
+                  <input type="checkbox" id="nova">
+                  <label for="nova">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/nova.webp" alt="nova">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">phoenix</span>
+                  <input type="checkbox" id="phoenix">
+                  <label for="phoenix">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/phoenix.webp" alt="phoenix">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">priest</span>
+                  <input type="checkbox" id="priest">
+                  <label for="priest">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/priest.webp" alt="priest">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">prime</span>
+                  <input type="checkbox" id="prime">
+                  <label for="prime">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/prime.webp" alt="prime">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">red_dragon</span>
+                  <input type="checkbox" id="red_dragon">
+                  <label for="red_dragon">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/red_dragon.webp" alt="red_dragon">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">solar</span>
+                  <input type="checkbox" id="solar">
+                  <label for="solar">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/solar.webp" alt="solar">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">sunset</span>
+                  <input type="checkbox" id="sunset">
+                  <label for="sunset">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/sunset.webp" alt="sunset">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">test</span>
+                  <input type="checkbox" id="test">
+                  <label for="test">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/test.webp" alt="test">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">warped</span>
+                  <input type="checkbox" id="warped">
+                  <label for="warped">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Elytra/warped.webp" alt="warped">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="totem">
+              <div class="accordion">
+                <div class="tab">
+                  <span class="title">Blackirita</span>
+                  <input type="checkbox" id="Blackirita">
+                  <label for="Blackirita">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Blackirita.webp" alt="Blackirita">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">Dalandis</span>
+                  <input type="checkbox" id="Dalandis">
+                  <label for="Dalandis">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Dalandis.webp" alt="Dalandis">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">dunno59</span>
+                  <input type="checkbox" id="dunno59">
+                  <label for="dunno59">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/dunno59.webp" alt="dunno59">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">dunno69</span>
+                  <input type="checkbox" id="dunno69">
+                  <label for="dunno69">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/dunno69.webp" alt="dunno69">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">Kerubifi</span>
+                  <input type="checkbox" id="Kerubifi">
+                  <label for="Kerubifi">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Kerubifi.webp" alt="Kerubifi">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">KIPO4</span>
+                  <input type="checkbox" id="KIPO4">
+                  <label for="KIPO4">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/KIPO4.webp" alt="KIPO4">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">Matychka</span>
+                  <input type="checkbox" id="Matychka">
+                  <label for="Matychka">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Matychka.webp" alt="Matychka">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">Niksette</span>
+                  <input type="checkbox" id="Niksette">
+                  <label for="Niksette">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Niksette.webp" alt="Niksette">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">Pr0sTiK</span>
+                  <input type="checkbox" id="Pr0sTiK">
+                  <label for="Pr0sTiK">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/Pr0sTiK.webp" alt="Pr0sTiK">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">prestig9110</span>
+                  <input type="checkbox" id="prestig9110">
+                  <label for="prestig9110">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/prestig9110.webp" alt="prestig9110">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">SoftPanda3</span>
+                  <input type="checkbox" id="SoftPanda3">
+                  <label for="SoftPanda3">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/SoftPanda3.webp" alt="SoftPanda3">
+                  </div>
+                </div>
+                <div class="tab">
+                  <span class="title">VessAy</span>
+                  <input type="checkbox" id="VessAy">
+                  <label for="VessAy">
+                    <div class="mark"></div>
+                  </label>
+                  <div class="panel">
+                    <img src="./img/resources/Totem/VessAy.webp" alt="VessAy">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---------- litematica --------- -->
+        <section id="litematica">
+          <h2>Error</h2>
+        </section>
+
+        <!-- ---------- market --------- -->
+        <section id="market">
+          <h2>Рынок</h2>
+          <h4>Житель покупает:</h4>
+          <ul>
+            <li><img src="./img/market/Oge/Алмазная_руда.png" alt="Алмазная_руда.png"><span>Алмазная руда</span> - prise
+              2$</li>
+            <li><img src="./img/market/Oge/Изумрудная_руда.png" alt="Изумрудная_руда.png"><span>Изумрудная руда</span> -
+              prise 4$</li>
+            <li><img src="./img/market/Oge/Лазуритовая_руда.png" alt="Лазуритовая.png"><span>Лазуритовая руда</span> -
+              prise 4-6$</li>
+            <li><img src="./img/market/Oge/Древние_обломки.png" alt="Древние_обломки.png"><span>Древние обломки</span> -
+              prise 6-10$</li>
+          </ul>
+          <h4>Житель продает:</h4>
+          <ul>
+            <li><img src="./img/market/all/Голова.png" alt="Голова.png"><span>Головы</span> - prise 5-10$ (В асортименте
+              35000+ голов)</li>
+            <li><img src="./img/market/all/Enchanted_Paper.png" alt="Enchanted_Paper.png"><span>Билеты на дополнительные
+                миры</span> - prise 50-75$</li>
+            <li><img src="./img/market/all/Панцирь_шалкера.png" alt="Панцирь_шалкера.png"><span>Панцири шалкера</span> -
+              prise 15-20$ </li>
+            <li><img src="./img/market/Enchanted/Golden_Apple.gif" alt="Golden_Apple.gif"><span>Зачарованое
+                яблоко</span> - prise 750-1000$ </li>
+            <li><br></li>
+            <li><img src="./img/market/Oge/Алмазная_руда.png" alt="Алмазная_руда.png"><span>Алмазная руда</span> - prise
+              2$</li>
+            <li><img src="./img/market/Oge/Изумрудная_руда.png" alt="Изумрудная_руда.png"><span>Изумрудная руда</span> -
+              prise 4$</li>
+            <li><img src="./img/market/Oge/Лазуритовая_руда.png" alt="Лазуритовая.png"><span>Лазуритовая руда</span> -
+              prise 4-6$</li>
+            <li><img src="./img/market/Oge/Древние_обломки.png" alt="Древние_обломки.png"><span>Древние обломки</span> -
+              prise 6-10$</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Pickaxe.gif" alt="Netherite_Pickaxe.gif"><span>Незеритовая
+                кирка</span> - prise 50$ (Эффективность 1-6, Починка, Шёлковое касание, Прочность 1-4) --- random ---
+            </li>
+            <li><img src="./img/market/Enchanted/Netherite_Pickaxe.gif" alt="Netherite_Pickaxe.gif"><span>Незеритовая
+                кирка</span> - prise 50$ (Эффективность 1-6, Починка, Удача 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Pickaxe.gif" alt="Netherite_Pickaxe.gif"><span>Незеритовая
+                кирка</span> - prise 150$ (Эффективность 5, Починка, Шёлковое касание, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Pickaxe.gif" alt="Netherite_Pickaxe.gif"><span>Незеритовая
+                кирка</span> - prise 300$ (Эффективность 5, Починка, Удача 4, Прочность 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Axe.gif" alt="Netherite_Axe.gif"><span>Незеритовый
+                топор</span> - prise 50$ (Эффективность 1-6, Починка, Шёлковое касание, Прочность 1-4) --- random ---
+            </li>
+            <li><img src="./img/market/Enchanted/Netherite_Axe.gif" alt="Netherite_Axe.gif"><span>Незеритовый
+                топор</span> - prise 50$ (Эффективность 1-6, Починка, Удача 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Axe.gif" alt="Netherite_Axe.gif"><span>Незеритовый
+                топор</span> - prise 150$ (Эффективность 5, Починка, Шёлковое касание, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Axe.gif" alt="Netherite_Axe.gif"><span>Незеритовый
+                топор</span> - prise 300$ (Эффективность 5, Починка, Удача 4, Прочность 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Shovel.gif" alt="Netherite_Shovel.gif"><span>Незеритовая
+                лопата</span> - prise 50$ (Эффективность 1-6, Починка, Шёлковое касание, Прочность 1-4) --- random ---
+            </li>
+            <li><img src="./img/market/Enchanted/Netherite_Shovel.gif" alt="Netherite_Shovel.gif"><span>Незеритовая
+                лопата</span> - prise 50$ (Эффективность 1-6, Починка, Удача 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Shovel.gif" alt="Netherite_Shovel.gif"><span>Незеритовая
+                лопата</span> - prise 150$ (Эффективность 5, Починка, Шёлковое касание, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Shovel.gif" alt="Netherite_Shovel.gif"><span>Незеритовая
+                лопата</span> - prise 300$ (Эффективность 5, Починка, Удача 4, Прочность 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Hoe.gif" alt="Netherite_Hoe.gif"><span>Незеритовая
+                мотыга</span> - prise 50$ (Эффективность 1-6, Починка, Шёлковое касание, Прочность 1-4) --- random ---
+            </li>
+            <li><img src="./img/market/Enchanted/Netherite_Hoe.gif" alt="Netherite_Hoe.gif"><span>Незеритовая
+                мотыга</span> - prise 50$ (Эффективность 1-6, Починка, Удача 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Hoe.gif" alt="Netherite_Hoe.gif"><span>Незеритовая
+                мотыга</span> - prise 150$ (Эффективность 5, Починка, Шёлковое касание, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Hoe.gif" alt="Netherite_Hoe.gif"><span>Незеритовая
+                мотыга</span> - prise 300$ (Эффективность 5, Починка, Удача 4, Прочность 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 50$ (Воспламинение,
+              Починка, Сила 1-6, Откидывание 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 50$ (Воспламинение,
+              Бесконечность, Сила 1-6, Откидывание 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 200$ (Воспламинение,
+              Починка, Сила 6, Откидывание 2, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 200$ (Воспламинение,
+              Бесконечность, Сила 6, Откидывание 2, Прочность 4) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 50$ (Починка, Сила 1-6,
+              Откидывание 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 50$ (Бесконечность,
+              Сила 1-6, Откидывание 1-3, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 200$ (Починка, Сила 6,
+              Откидывание 2, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Bow.gif" alt="Bow.gif"><span>Лук</span> - prise 200$ (Бесконечность,
+              Сила 6, Откидывание 2, Прочность 4) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Crossbow.gif" alt="Crossbow.gif"><span>Арбалет</span> - prise 50$
+              (Починка, Пронизающая стрела 1-4, Быстрая перезарятка 1-4, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Crossbow.gif" alt="Crossbow.gif"><span>Арбалет</span> - prise 50$
+              (Починка, Тройной выстрел, Быстрая перезарятка 1-4, Прочность 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Crossbow.gif" alt="Crossbow.gif"><span>Арбалет</span> - prise 200$
+              (Починка, Пронизающая стрела 4, Быстрая перезарятка 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Crossbow.gif" alt="Crossbow.gif"><span>Арбалет</span> - prise 200$
+              (Починка, Тройной выстрел, Быстрая перезарятка 4, Прочность 4) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Trident.gif" alt="Trident.gif"><span>Трезубец</span> - prise 50$
+              (Починка, Тягун 1-4, Прочность 1-4, Пронзатель 1-6) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Trident.gif" alt="Trident.gif"><span>Трезубец</span> - prise 50$
+              (Починка, Верность 1-4, Прочность 1-4, Пронзатель 1-6, Громовержец) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Trident.gif" alt="Trident.gif"><span>Трезубец</span> - prise 200$
+              (Починка, Тягун 3, Прочность 4, Пронзатель 6) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Trident.gif" alt="Trident.gif"><span>Трезубец</span> - prise 200$
+              (Починка, Верность 3, Прочность 4, Пронзатель 6, Громовержец) --- random ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Fishing_Rod.gif" alt="Fishing_Rod.gif"><span>Удочка</span> - prise 50$
+              (Починка, Приманка 1-4, Прочность 1-4, Везучий рыбак 1-4) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Fishing_Rod.gif" alt="Fishing_Rod.gif"><span>Удочка</span> - prise 300$
+              (Починка, Приманка 4, Прочность 4, Везучий рыбак 4) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Shears.gif" alt="Shears.gif"><span>Ножницы</span> - prise 50$ (Починка,
+              Прочность 1-5) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Shears.gif" alt="Shears.gif"><span>Ножницы</span> - prise 300$
+              (Починка, Прочность 5) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Shield.gif" alt="Shield.gif"><span>Щит</span> - prise 50$ (Починка,
+              Прочность 1-5) --- random ---</li>
+            <li><img src="./img/market/Enchanted/Shield.gif" alt="Shield.gif"><span>Щит</span> - prise 300$ (Починка,
+              Прочность 5) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Небесная
+              кара 5, Отдача 2) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Небесная
+              кара 5) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Острота 5,
+              Отдача 2) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Острота 5)
+              --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Бич
+              членестоногих 5, Отдача 2) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Sword.gif" alt="Netherite_Sword.gif"><span>Незеритовый
+                мечь</span> - prise 300-350$ (Починка, Прочность 3, Разящий клинок 3, Добыча 3, Заговор огня, Бич
+              членестоногих 5) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Защита 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Защита 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Защита от снарядов 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Защита от снарядов 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Огнеупорность 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Огнеупорность 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Взрывоустойчивость 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Turtle_Shell.gif" alt="Turtle_Shell.gif"><span>Черепаший шлем</span> -
+              prise 300-350$ (Починка, Подводник, Взрывоустойчивость 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Защита 4, Подводное дыхание 4, Прочность 4) --- fix
+              ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Защита 4, Подводное дыхание 4, Прочность 4, Шипы 3)
+              --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Защита от снарядов 4, Подводное дыхание 4, Прочность
+              4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Защита от снарядов 4, Подводное дыхание 4, Прочность
+              4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Огнеупорность 4, Подводное дыхание 4, Прочность 4) ---
+              fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Огнеупорность 4, Подводное дыхание 4, Прочность 4,
+              Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Взрывоустойчивость 4, Подводное дыхание 4, Прочность
+              4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Helmet.gif" alt="Netherite_Helmet.gif"><span>Незеритовый
+                Шлем</span> - prise 300-350$ (Подводник, Починка, Взрывоустойчивость 4, Подводное дыхание 4, Прочность
+              4, Шипы 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка, Защита 4,
+              Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка, Защита 4,
+              Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка, Защита от
+              снарядов 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка, Защита от
+              снарядов 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка,
+              Огнеупорность 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка,
+              Огнеупорность 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка,
+              Взрывоустойчивость 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Chestplate.gif"
+                alt="Netherite_Chestplate.gif"><span>Незеритовый нагрудник</span> - prise 300-350$ (Починка,
+              Взрывоустойчивость 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Защита 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Защита 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Защита от снарядов 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Защита от снарядов 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Огнеупорность 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Огнеупорность 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Взрывоустойчивость 4, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Leggings.gif" alt="Netherite_Leggings.gif"><span>Незеритовые
+                поножи</span> - prise 300-350$ (Починка, Взрывоустойчивость 4, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><br></li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Защита 4, Скорость души 3,
+              Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Защита 4, Скорость души 3,
+              Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Защита от снарядов 4,
+              Скорость души 3, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Защита от снарядов 4,
+              Скорость души 3, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Огнеупорность 4, Скорость
+              души 3, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Огнеупорность 4, Скорость
+              души 3, Прочность 4, Шипы 3) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Взрывоустойчивость 4,
+              Скорость души 3, Прочность 4) --- fix ---</li>
+            <li><img src="./img/market/Enchanted/Netherite_Boots.gif" alt="Netherite_Boots.gif"><span>Незеритовые
+                ботинки</span> - prise 300-350$ (Подводная ходьба 3, Невесомость 5, Починка, Взрывоустойчивость 4,
+              Скорость души 3, Прочность 4, Шипы 3) --- fix ---</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+
+    <!-- ---------- scripts --------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/functionToggle.js"></script>
+    <script src="./js/fotorama.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/snap.svg-min.js"></script>
+
+</body>
+
+</html>
