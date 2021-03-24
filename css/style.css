@@ -188,6 +188,8 @@ h6 {
 #toggle > span {
   color: white;
 }
+/*---------------------------------------- the-default-view ----------------------------------------*/
+
 /*---------------------------------------- start ----------------------------------------*/
 #start ul li span,
 #start p span {
@@ -202,12 +204,39 @@ h6 {
 #support ul li a {
   color: #30679e;
 }
+
+/*---------------------------------------- mods ----------------------------------------*/
+#mods ul li a {
+  color: #30679e;
+}
+#modsul li a:visited {
+  color: #30679e;
+}
+#mods ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  background: url(../img/check-mark.svg) no-repeat center;
+  background-size: cover;
+}
+#mods h4 span {
+  font-weight: 900;
+}
+/*---------------------------------------- plugins ----------------------------------------*/
+#plugins ul li span{
+  font-weight: 700;
+}
 /*---------------------------------------- maps ----------------------------------------*/
 .cd-btn {
-  display: inline-block;
-  padding: 1em 2em;
+  display: flex;
+  padding: 10px 20px;
+  margin: 20px 35px;
+
   color: #dab433;
   border: 2px solid #dab433;
+  font-size: 20px;
   font-weight: 700;
 }
 .cd-btn:hover {
@@ -286,24 +315,10 @@ h6 {
   border: none;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/*---------------------------------------- mods ----------------------------------------*/
-#mods ul li a {
-  color: #30679e;
-}
-#modsul li a:visited {
-  color: #30679e;
-}
-#mods ul li::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 8px;
-  background: url(../img/check-mark.svg) no-repeat center;
-  background-size: cover;
-}
-#mods h4 span {
-  font-weight: 900;
+/*---------------------------------------- command ----------------------------------------*/
+#command ul li span{
+  font-weight: 800;
+  font-style: italic;
 }
 /*---------------------------------------- resources ----------------------------------------*/
 #resources .content {
@@ -563,4 +578,3 @@ h6 {
     content: "";
   }
 }
-
