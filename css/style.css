@@ -45,14 +45,18 @@
 body {
   background: url(../img/bg-light-4869.png);
 }
+.body-center-container{
+  display: flex;
+  justify-content: center;
+}
 .container {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 100px;  
   height: 100%;
   min-height: 1024px;
-  width: 100%;
+  width: 1800px;
   color: black;
   z-index: -10;
 }
@@ -327,6 +331,20 @@ h6 {
   justify-content: start;
   flex-wrap: wrap;
 }
+#resources h4 span{
+  font-style: italic;
+}
+.download-files{
+  text-decoration: none;
+  margin: 15px;
+  padding: 15px;
+  font-size: 18px;
+  color: #ffba00;
+  transition: all 0.5s ease;
+}
+.download-files:hover{
+  color: #ff74fa;
+}
 .elytra,
 .totem {
   display: flex;
@@ -419,9 +437,10 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 600px;
+  height: 650px;
   width: 100%;
-  padding: 100px 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: rgba(0, 0, 0, 0.5);
 }
 .card {
