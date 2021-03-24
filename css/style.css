@@ -425,11 +425,11 @@ h6 {
 .main-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   height: 600px;
   width: 100%;
   padding: 100px 200px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 .card {
   position: relative;
@@ -439,7 +439,6 @@ h6 {
   width: 450px;  
   background: url(../img/bg-light-4869.png);
   border-radius: 8px;
-  border: 1px solid black;
   box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.3);
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
@@ -496,7 +495,6 @@ h6 {
   height: 110px;
   border-radius: 25%;
   overflow: hidden;
-  border: 1.5px solid black;
   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.6);
   z-index: 9;
 }
@@ -509,15 +507,14 @@ h6 {
 .linck-contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
   padding-top: 80px;
-  color: white;
 }
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 100px;
+  justify-content: space-around;
 }
 .contact a img {
   width: 65px;
