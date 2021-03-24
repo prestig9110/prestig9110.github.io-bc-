@@ -210,104 +210,82 @@ h6 {
   border: 2px solid #dab433;
   font-weight: 700;
 }
-.no-touch .cd-btn:hover {
+.cd-btn:hover {
   background-color: #dab433;
   color: #f2f2f2;
 }
-
-.cd-modal {
+.md-modal-1,
+.md-modal-2 {
   position: fixed;
-  z-index: 99999;
+  margin: 0;
+  padding: 0;
   top: 0;
   left: 0;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   width: 100%;
+  height: 100%;
+  z-index: 2000;
   visibility: hidden;
-  transition: visibility 0s 0.6s;
+  backface-visibility: hidden;
 }
-.cd-modal svg {
-  position: absolute;
+.md-show {
+  visibility: visible;
+}
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
   top: 0;
   left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(#e4f0e3, 0.8);
+  transition: all 0.3s;
 }
-.cd-modal svg > path {
-  fill: #ffba00;
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
 }
-.cd-modal .modal-close {
+.md-content {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.md-show.md-effect ~ .md-overlay {
+  background-color: #e4f0e3;
+}
+.md-effect .md-content {
+  background: transparent;
+}
+.md-show.md-effect .md-content {
+  transform: scale(1);
+  opacity: 1;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.md-close {
   position: absolute;
-  z-index: 1;
-  top: 20px;
-  right: 5%;
+  z-index: 3000;
+  top: 3%;
+  right: 10%;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
+  border-radius: 25%;
   background: rgba(0, 0, 0, 0.3) url(../img/cd-icon-close.svg) no-repeat center
     center;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(0);
-  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
-.no-touch .cd-modal .modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+.md-close:hover {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-.cd-modal.modal-is-visible {
-  visibility: visible;
-  transition: visibility 0s 0s;
-}
-.cd-modal.modal-is-visible .modal-close {
-  visibility: visible;
-  opacity: 1;
-  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
-  transform: scale(1);
-}
-
-.cd-modal-content {
-  position: relative;
-  height: 100%;
-  padding: 0;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.3s 0s, transform 0.3s 0s;
-}
-.cd-modal-content p {
-  color: #f2f2f2;
-  line-height: 1.6;
-  margin: 2em 0;
-}
-.modal-is-visible .cd-modal-content {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
-}
-/* -------------------------------- 
-
- Cover Layer - hide main content when modal is fired
-
--------------------------------- */
-.cd-cover-layer {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #f2f2f2;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s 0.3s, visibility 0s 0.6s;
-}
-.cd-cover-layer.modal-is-visible {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-
 /*---------------------------------------- mods ----------------------------------------*/
 #mods ul li a {
   color: #30679e;
@@ -433,10 +411,10 @@ h6 {
 }
 .card {
   position: relative;
-  padding: 0;  
+  padding: 0;
   margin: 0px 100px;
   height: 450px;
-  width: 450px;  
+  width: 450px;
   background: url(../img/bg-light-4869.png);
   border-radius: 8px;
   box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.3);
@@ -585,3 +563,4 @@ h6 {
     content: "";
   }
 }
+
