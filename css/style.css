@@ -237,7 +237,8 @@ h6 {
   display: flex;
   padding: 10px 20px;
   margin: 20px 35px;
-  width: max-content;
+  width: 250px;
+  text-align: center;
   color: #dab433;
   border: 2px solid #dab433;
   font-size: 20px;
